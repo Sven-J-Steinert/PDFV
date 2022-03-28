@@ -1,10 +1,10 @@
- var pdf_bytes = [0];
+ var pdf_bytes;
  
  document.getElementById('inputfile').addEventListener('change', function() {
             var fr=new FileReader();
             fr.onload=function(){
                 pdf_bytes = fr.result;
-                console.log(pdf_bytes);
+                //console.log(pdf_bytes);
             }
             fr.readAsArrayBuffer(this.files[0]);
         })
