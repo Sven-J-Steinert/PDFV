@@ -21,9 +21,23 @@
 </head>
 <body>
   
-  <div class="main" id="reference_file_creation">
+ <div class="main" id="reference_file_creation">
     <h1>reference file creation</h1>
-    <input type="file" id="inputfile" accept=".pdf" >
+    
+     <table>
+      <tr>
+        <th>PDF file</th>
+        <th>Audio file</th>
+        <th>Sequence</th>
+      </tr>
+      <tr>
+        <td><input type="file" id="inputfile_pdf" accept=".pdf" ></td>
+        <td><input type="file" id="inputfile_audio" accept="audio/*"></td>
+        <td><input type="file" id="inputfile_sequence" ></td>
+      </tr>
+    </table> 
+    
+    <br>
     <button onclick="create_PDFV()">Create PDFV</button>
   </div>
   
