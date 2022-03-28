@@ -41,14 +41,22 @@
     <button onclick="create_PDFV()">Create PDFV</button>
   </div>
   
-   <div class="main" id="reference_recorder">
+  <div class="main" id="reference_recorder">
     <h1>reference recorder</h1>
   </div>
   
-    <div class="main" id="reference_player">
+  <div class="main" id="reference_player">
     <h1>reference player</h1>
+    <input type="file" id="inputfile_pdfv" accept=".pdfv" >
+    <br><br>
+    <canvas id="the-canvas" style="border:1px solid black"></canvas>
   </div>
 
+
+<!--File creation dependencies-->
 <script src="reference/js/file_creation.js"></script>
+<!--Player dependencies-->
+<script src="reference/js/player.js"></script>
+<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
 </body>
 </html>
